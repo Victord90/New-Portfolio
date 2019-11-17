@@ -5,38 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Victor's Portfolio</title>
+    <script src="https://kit.fontawesome.com/61b34eadf4.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/reset.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     
 </head>
 <body>
-    <!-- <nav> navbar content here   -->
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo"><i class="fas fa-laptop-code"></i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
 
-  <ul id="slide-out" class="sidenav sidenav-fixed">
-    <li><div class="user-view">
-      <div class="background">
-        <img src="images/office.jpg">
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">Victor Dominguez</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">UCF full stack student, excited to learn!</h5>
+        </div>
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+        </div>
+        <br><br>
+
       </div>
-      <a href="#user"><img class="circle" src="images/yuna.jpg"></a>
-      <a href="#name"><span class="white-text name">John Doe</span></a>
-      <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
-    </div></li>
-    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-    <li><a href="#!">Second Link</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="subheader">Subheader</a></li>
-    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
-    <li><a class="sidenav-close" href="#!">Clicking this will close Sidenav</a></li>
-  </ul>
-  <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i class="material-icons">menu</i></a>
+    </div>
+    <div class="parallax"><img src="assets/images/computer-background.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+          <div class="col s12 center">
+              <!-- <h3><i class="mdi-content-send brown-text"></i></h3> -->
+              <h4>Latest Projects</h4>
+          </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <a href="https://victord90.github.io/BrewFinder/" target="_blank">
+            <h2 class="center brown-text"><i class=" fas fa-beer"></i></h2>
+            <h5 class="center brown-text">Brew Finder</h5>
+            </a>
+            <p class="light">Brew Finder is my first group project. Our website is all about breweries, we have a carousel of articles from the guardian api. After you read some info about breweries then you can search any city and/or state in the U.S as well as key-words to search for breweries.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+              <a href="https://victord90.github.io/Plane-Scheduler/" target="_blank">
+            <h2 class="center brown-text"><i class="fas fa-plane"></i></h2>
+            <h5 class="center brown-text">Plane Scheduler</h5>
+              </a>
+            <p class="light">The Plane Scheduler is my first project when I got experience with server-data, I used firebase as my server. I made it so you can set up plane departures and it will help you determine what time they will arrive as well as take off again. I used moment.js to make it real time based.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+              <a href="https://victord90.github.io/GifTastic/" target="_blank">
+            <h2 class="center brown-text"><i class="fas fa-spinner"></i></h2>
+            <h5 class="center brown-text">Giftastic</h5>
+              </a>
+
+            <p class="light">The Giphy page is my first project working with api's. I used the giphy api to bring in 10 gifs at a time of any player you click on. You can also create your own button, all you have to do is type in the player you want and the website will create the button for you.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Main information on me</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/daniel-leone-g30P1zcOzXo-unsplash.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <!-- <h3><i class="mdi-content-send brown-text"></i></h3> -->
+          <h4>About Me</h4>
+          <p class="left-align light">Hello my name is Victor I am 29 years old and have lived in central Florida my entire life.
+            I have been in the hospitaliy industry my entire working career. I have recently decided to
+            make a change and enrolled in a coding boot camp in the UCF Continued Education department.
+            I am new to this but am determined and excited to have a new career in web development.</p>
+          <p class="left-align light">I am a pretty simple guy, I love sports, Im a big Orlando Magic fan especially.
+            I also love to cook, my favorite thing to do is to attempt a new recipe I've never
+            tried before and make it my own delicious meal. I also love music and collect vinyl
+            records, I have about 40 records so far. One of may favorite things to do on my
+            day off is to go see a movie, I have a movie pass so why not get the most out of
+            it.</p>
+          <p class="left-align light">I currently live with my girlfriend Madelyn, we live walking distance to 
+            Sea World which is nice when we want to get out the house and walk around
+            to see the animals. We are the parent of two cats, Cheeto and Kanye they 
+            are very friendly and sweet.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Get in touch with me</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="row">
+
+          <div class="col s6">
+            <!-- Promo Content 1 goes here -->
+            <div class="icon-block">
+                <a href="https://github.com/Victord90" target="_blank"> 
+              <h2 class="center brown-text"><i class="fab fa-github"></i></h2>
+              <h5 class="center brown-text">Github</h5>
+                </a>
+            </div>
+          </div>
+          <div class="col s6">
+            <!-- Promo Content 2 goes here -->
+            <div class="icon-block">
+              <a href="https://linkedin.com/in/victor-dominguez-b444b7191" target="_blank">
+              <h2 class="center brown-text"><i class="fab fa-linkedin"></i></h2>
+              <h5 class="center brown-text">Linkedin</h5>
+              </a>
+  
+            </div>
+          </div>
         
-    <!-- </nav> -->
-
-
+    
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
 <!-- Compiled and minified JavaScript -->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
 <script src="assets/javascript/app.js"></script>
