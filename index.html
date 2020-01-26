@@ -15,22 +15,40 @@
     
 </head>
 <body>
+
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#aboutMe">About me</a></li>
+    <li><a href="#myLinks">My links</a></li>
+  </ul>
+
+  <div class="navbar-fixed">
   <nav class="white" role="navigation">
     <div class="nav-wrapper container">
+      <div class="nav-wrapper">
       <a id="logo-container" href="#" class="brand-logo"><i class="fas fa-laptop-code"></i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+      <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Nav Link<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-        <li><a href="#projects">Go to projects</a></li>
-        <li><a href="#aboutMe">Go to about me</a></li>
-        <li><a href="#myLinks">My links</a></li>
-      </ul>
+      
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
+  </div>
+
   </nav>
+
+  </div>
+
+
+  <ul id="nav-mobile" class="sidenav">
+    <li><a href="#">Navbar Link</a></li>
+    <li><a href="#projects">Go to projects</a></li>
+    <li><a href="#aboutMe">Go to about me</a></li>
+    <li><a href="#myLinks">My links</a></li>
+  </ul>
+
+
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
@@ -151,7 +169,7 @@
   <footer class="page-footer teal"><a id="myLinks"></a>
     <div class="container">
       <div class="row">
-        <div class="row">
+        
 
           <div class="col s6">
             <!-- Promo Content 1 goes here -->
@@ -176,12 +194,9 @@
     
         </div>
       </div>
-    </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
-      </div>
-    </div>
+
+    
+    
   </footer>
 <!-- Compiled and minified JavaScript -->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
