@@ -42,6 +42,10 @@
 main {
     flex: 1 0 auto;
 }
+
+.workHeadline {
+  text-decoration: underline;
+}
  
  @media only screen and (max-width : 992px) {
    .parallax-container .section {
