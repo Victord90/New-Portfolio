@@ -13,6 +13,7 @@
  
  p {
    line-height: 2rem;
+   font-size: large;
  }
  
  .sidenav-trigger {
@@ -38,6 +39,7 @@
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Roboto Slab', serif;
 }
 main {
     flex: 1 0 auto;
